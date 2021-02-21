@@ -21,12 +21,6 @@ with open(election_data, newline = "") as csvfile:
         # Add to our vote-counter 
         total_votes += 1 
 
-        '''
-        If the candidate is not on our list, add his/her name to our list, along with 
-        a vote in his/her name.
-        If he/she is already on our list, we will simply add a vote in his/her
-        name 
-        '''
         
         if row[2] not in candidates:
             candidates.append(row[2])
