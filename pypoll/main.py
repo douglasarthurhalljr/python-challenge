@@ -27,6 +27,7 @@ with open(election_data, newline = "") as csvfile:
         If he/she is already on our list, we will simply add a vote in his/her
         name 
         '''
+        
         if row[2] not in candidates:
             candidates.append(row[2])
             index = candidates.index(row[2])
