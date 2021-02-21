@@ -37,6 +37,12 @@ with open(election_data, newline = "") as csvfile:
         percentage = round(percentage)
         percentage = "%.3f%%" % percentage
         percent_votes.append(percentage)
+        
+          # Find the winning candidate
+    winner = max(num_votes)
+    index = num_votes.index(winner)
+    winning_candidate = candidates[index]
+    
     
   
 
