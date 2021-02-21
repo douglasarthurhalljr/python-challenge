@@ -5,7 +5,13 @@ import csv
 election_data = os.path.join(r"C:\Users\dougl\OneDrive\Desktop\election_data.csv")
 
 # lists to capture our variables
+candidates = []
 
+num_votes = []
+ 
+percent_votes = []
+ 
+total_votes = 0
 
 with open(election_data, newline = "") as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ",")
